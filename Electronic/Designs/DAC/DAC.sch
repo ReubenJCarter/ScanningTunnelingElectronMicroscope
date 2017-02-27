@@ -6765,7 +6765,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R22" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="AOUT" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X6" device="" value="AOUT"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X8" device="" value="DIGITAL"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
@@ -6794,6 +6794,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY27" library="supply2" deviceset="-15V" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="-15V" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="+15V" device=""/>
+<part name="SUPPLY30" library="supply2" deviceset="+15V" device=""/>
+<part name="SUPPLY31" library="supply2" deviceset="-15V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6836,7 +6838,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="R21" gate="G$1" x="27.94" y="-55.88"/>
 <instance part="R22" gate="G$1" x="27.94" y="-48.26"/>
 <instance part="SUPPLY9" gate="GND" x="38.1" y="-50.8"/>
-<instance part="AOUT" gate="A" x="99.06" y="-99.06"/>
+<instance part="JP2" gate="A" x="99.06" y="-99.06"/>
 <instance part="SUPPLY10" gate="GND" x="88.9" y="-106.68"/>
 <instance part="JP3" gate="A" x="-50.8" y="0" rot="R180"/>
 <instance part="SUPPLY11" gate="GND" x="-40.64" y="-15.24"/>
@@ -6865,6 +6867,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="SUPPLY27" gate="G$1" x="27.94" y="-15.24" rot="R180"/>
 <instance part="SUPPLY28" gate="G$1" x="0" y="-38.1" rot="R180"/>
 <instance part="SUPPLY29" gate="+15V" x="5.08" y="-38.1"/>
+<instance part="SUPPLY30" gate="+15V" x="121.92" y="35.56"/>
+<instance part="SUPPLY31" gate="G$1" x="116.84" y="35.56" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6914,6 +6918,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$4" gate="G$1" pin="V-"/>
 <wire x1="0" y1="-40.64" x2="0" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY31" gate="G$1" pin="-15V"/>
+<pinref part="U$2" gate="G$1" pin="V-"/>
+<wire x1="116.84" y1="33.02" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+15V" class="0">
 <segment>
@@ -6946,6 +6955,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="SUPPLY29" gate="+15V" pin="+15V"/>
 <pinref part="U$4" gate="G$1" pin="V+"/>
 <wire x1="5.08" y1="-40.64" x2="5.08" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY30" gate="+15V" pin="+15V"/>
+<pinref part="U$2" gate="G$1" pin="V+"/>
+<wire x1="121.92" y1="33.02" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6990,7 +7004,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="38.1" y1="-48.26" x2="33.02" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AOUT" gate="A" pin="6"/>
+<pinref part="JP2" gate="A" pin="6"/>
 <wire x1="96.52" y1="-104.14" x2="88.9" y2="-104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 </segment>
@@ -7045,7 +7059,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="81.28" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AOUT" gate="A" pin="1"/>
+<pinref part="JP2" gate="A" pin="1"/>
 <wire x1="96.52" y1="-91.44" x2="88.9" y2="-91.44" width="0.1524" layer="91"/>
 <label x="83.82" y="-91.44" size="1.778" layer="95"/>
 </segment>
@@ -7086,7 +7100,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="81.28" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AOUT" gate="A" pin="2"/>
+<pinref part="JP2" gate="A" pin="2"/>
 <wire x1="96.52" y1="-93.98" x2="88.9" y2="-93.98" width="0.1524" layer="91"/>
 <label x="83.82" y="-93.98" size="1.778" layer="95"/>
 </segment>
@@ -7226,7 +7240,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="157.48" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AOUT" gate="A" pin="3"/>
+<pinref part="JP2" gate="A" pin="3"/>
 <wire x1="96.52" y1="-96.52" x2="88.9" y2="-96.52" width="0.1524" layer="91"/>
 <label x="83.82" y="-96.52" size="1.778" layer="95"/>
 </segment>
@@ -7275,7 +7289,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="157.48" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AOUT" gate="A" pin="4"/>
+<pinref part="JP2" gate="A" pin="4"/>
 <wire x1="96.52" y1="-99.06" x2="88.9" y2="-99.06" width="0.1524" layer="91"/>
 <label x="83.82" y="-99.06" size="1.778" layer="95"/>
 </segment>
@@ -7355,7 +7369,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$4" gate="G$1" pin="OUTB"/>
 </segment>
 <segment>
-<pinref part="AOUT" gate="A" pin="5"/>
+<pinref part="JP2" gate="A" pin="5"/>
 <wire x1="96.52" y1="-101.6" x2="88.9" y2="-101.6" width="0.1524" layer="91"/>
 <label x="83.82" y="-101.6" size="1.778" layer="95"/>
 </segment>
@@ -7447,6 +7461,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-2.54,17.78,U$1,VDD,+5V,,,"/>
+<approved hash="104,1,121.92,30.48,U$2,V+,+15V,,,"/>
+<approved hash="104,1,116.84,30.48,U$2,V-,-15V,,,"/>
+<approved hash="104,1,-50.8,43.18,U$3,VIN,+15V,,,"/>
+<approved hash="104,1,5.08,-48.26,U$4,V+,+15V,,,"/>
+<approved hash="104,1,0,-48.26,U$4,V-,-15V,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

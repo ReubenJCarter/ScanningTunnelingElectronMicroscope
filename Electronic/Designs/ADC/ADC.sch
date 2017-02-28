@@ -4362,6 +4362,11 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,35.56,63.5,U$1,V+,+15V,,,"/>
+<approved hash="104,1,35.56,38.1,U$1,V-,-15V,,,"/>
+<approved hash="104,1,88.9,60.96,U$2,VDD,+5V,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

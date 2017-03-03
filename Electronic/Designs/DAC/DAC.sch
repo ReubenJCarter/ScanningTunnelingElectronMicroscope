@@ -7184,9 +7184,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="73.66" y="-22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VOUTB"/>
-<wire x1="20.32" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
-<label x="25.4" y="2.54" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="VOUTD"/>
+<wire x1="20.32" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
+<label x="25.4" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -7242,9 +7242,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="160.02" y="-22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VOUTD"/>
-<wire x1="20.32" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
-<label x="25.4" y="-2.54" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="VOUTB"/>
+<wire x1="20.32" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
+<label x="25.4" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">

@@ -6774,8 +6774,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY29" library="supply2" deviceset="+15V" device=""/>
 <part name="SUPPLY30" library="supply2" deviceset="+15V" device=""/>
 <part name="SUPPLY31" library="supply2" deviceset="-15V" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device="" value="5v"/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device="" value="15v"/>
 <part name="SUPPLY32" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>

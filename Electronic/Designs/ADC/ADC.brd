@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -1521,18 +1521,42 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="resistor" package="C0603" value="100nf" x="25.52" y="15.92" rot="R90"/>
-<element name="C2" library="resistor" package="C0603" value="100nf" x="28.22" y="15.97" rot="R90"/>
-<element name="C3" library="resistor" package="C0603" value="100nf" x="25.48" y="25.08" rot="R270"/>
-<element name="C4" library="resistor" package="C0603" value="47uf" x="28.36" y="23.64" rot="R180"/>
-<element name="C5" library="resistor" package="C0603" value="100nf" x="41.43" y="21.52" rot="R180"/>
-<element name="C6" library="resistor" package="C0603" value="100nf" x="35.66" y="30.18" rot="R270"/>
+<element name="C1" library="resistor" package="C0603" value="100nf" x="25.52" y="15.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.185" y="14.035" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="26.125" y="9.035" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C2" library="resistor" package="C0603" value="100nf" x="28.22" y="15.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.685" y="13.935" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="29.225" y="8.835" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C3" library="resistor" package="C0603" value="100nf" x="25.48" y="25.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.815" y="28.715" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="22.825" y="29.815" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C4" library="resistor" package="C0603" value="47uf" x="28.36" y="23.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.295" y="22.405" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="31.145" y="26.095" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C5" library="resistor" package="C0603" value="100nf" x="41.43" y="21.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="43.235" y="19.865" size="1.27" layer="25"/>
+<attribute name="VALUE" x="46.615" y="24.125" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C6" library="resistor" package="C0603" value="100nf" x="35.66" y="30.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.095" y="31.015" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="32.955" y="32.115" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="JP1" library="pinhead" package="1X02" value="AIN" x="36.87" y="15.6" rot="R90"/>
 <element name="JP2" library="pinhead" package="1X07" value="DOUT" x="10.71" y="20.63" rot="R90"/>
 <element name="JP3" library="pinhead" package="1X03" value="PW1" x="29.78" y="36.17" rot="R180"/>
 <element name="JP4" library="pinhead" package="1X02" value="PW2" x="12.15" y="38.23"/>
-<element name="U$1" library="LT1468" package="SOIC-8" value="LT1468" x="35.64" y="24.06" rot="R90"/>
-<element name="U$2" library="LTC2326-16" package="16-MSOP" value="LTC2326-16" x="23.41" y="20.63" rot="R180"/>
+<element name="U$1" library="LT1468" package="SOIC-8" value="LT1468" x="35.64" y="24.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.13" y="22.99" size="1.27" layer="21" rot="R90"/>
+<attribute name="VALUE" x="40.87" y="24.14" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="U$2" library="LTC2326-16" package="16-MSOP" value="LTC2326-16" x="23.41" y="20.63" smashed="yes" rot="R180">
+<attribute name="NAME" x="22.826" y="17.928" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="24.042" y="24.044" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1565,14 +1589,14 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="7"/>
 <contactref element="JP3" pad="1"/>
 <contactref element="JP4" pad="1"/>
-<polygon width="0.254" layer="1">
+<polygon width="0.254" layer="1" isolate="0.3048">
 <vertex x="0.5" y="49.5"/>
 <vertex x="49.5" y="49.5"/>
 <vertex x="49.5" y="0.5"/>
-<vertex x="30.6" y="0.5"/>
-<vertex x="30.6" y="19.7"/>
-<vertex x="30.05" y="19.7"/>
-<vertex x="30.05" y="0.5"/>
+<vertex x="31.242" y="0.5"/>
+<vertex x="31.242" y="19.7"/>
+<vertex x="30.0482" y="19.7"/>
+<vertex x="30.0482" y="0.5"/>
 <vertex x="0.5" y="0.5"/>
 </polygon>
 <wire x1="25.5182" y1="19.629240625" x2="24.570759375" y2="19.629240625" width="0.254" layer="1"/>
@@ -1701,6 +1725,15 @@ design rules under a new name.</description>
 <wire x1="16.868859375" y1="22.131140625" x2="13.4" y2="25.6" width="0.254" layer="1"/>
 <wire x1="13.4" y1="25.6" x2="10.82" y2="25.6" width="0.254" layer="1"/>
 <wire x1="10.82" y1="25.6" x2="10.71" y2="25.71" width="0.254" layer="1"/>
+</signal>
+<signal name="MOUNT">
+<via x="3.5" y="46.5" extent="1-16" drill="2" diameter="6"/>
+<via x="46.5" y="46.5" extent="1-16" drill="2" diameter="6"/>
+<via x="46.5" y="3.5" extent="1-16" drill="2" diameter="6"/>
+<via x="3.5" y="3.5" extent="1-16" drill="2" diameter="6"/>
+<wire x1="3.5" y1="46.5" x2="46.5" y2="46.5" width="0" layer="19" extent="1-1"/>
+<wire x1="46.5" y1="3.5" x2="46.5" y2="46.5" width="0" layer="19" extent="1-1"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="46.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

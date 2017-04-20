@@ -62,7 +62,7 @@
 <wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
 <wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
 <wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.3208" y="39.5224" size="1.778" layer="21">STM DAC V1</text>
+<text x="28.1432" y="40.5384" size="1.778" layer="21">STM DAC V1</text>
 </plain>
 <libraries>
 <library name="resistor">
@@ -1634,39 +1634,39 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </autorouter>
 <elements>
 <element name="C1" library="resistor" package="C0603" value="0.1uf" x="19.9692" y="46.9224" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.7594" y="48.2178" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="17.353" y="48.3194" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="20.6042" y="48.8274" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R1" library="resistor" package="R0603" value="40k" x="35.6108" y="31.2636" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.1922" y="32.4574" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="40.1066" y="32.4574" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="36.2458" y="33.1686" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R10" library="resistor" package="R0603" value="40k" x="35.654" y="21.4856" smashed="yes">
-<attribute name="NAME" x="37.2542" y="20.9014" size="1.27" layer="25"/>
+<attribute name="NAME" x="38.3718" y="20.7998" size="1.27" layer="25"/>
 <attribute name="VALUE" x="35.019" y="19.5806" size="1.27" layer="27"/>
 </element>
 <element name="R11" library="resistor" package="R0603" value="10k" x="35.654" y="19.1808" smashed="yes">
-<attribute name="NAME" x="37.2542" y="18.5966" size="1.27" layer="25"/>
+<attribute name="NAME" x="38.3718" y="18.3934" size="1.27" layer="25"/>
 <attribute name="VALUE" x="35.019" y="17.2758" size="1.27" layer="27"/>
 </element>
 <element name="R12" library="resistor" package="R0603" value="10k" x="32.1564" y="14.8044" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.7538" y="15.0838" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="36.6522" y="13.255" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="32.7914" y="16.7094" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R13" library="resistor" package="R0603" value="40k" x="32.0548" y="17.6492" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.6522" y="17.2174" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="37.8714" y="17.0142" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="32.6898" y="19.5542" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R14" library="resistor" package="R0603" value="40k" x="25.1244" y="24.2316" smashed="yes" rot="R270">
-<attribute name="NAME" x="24.1338" y="22.6314" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="24.0322" y="21.6154" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="23.2194" y="24.8666" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R15" library="resistor" package="R0603" value="10K" x="20.4508" y="24.2316" smashed="yes" rot="R270">
-<attribute name="NAME" x="18.0378" y="25.8826" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="17.5298" y="25.9842" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="18.5458" y="24.8666" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R16" library="resistor" package="R0603" value="10K" x="22.686" y="24.2316" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.5938" y="22.6314" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="21.5938" y="21.5138" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="20.781" y="24.8666" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R17" library="resistor" package="R0603" value="8k" x="27.6916" y="19.6004" smashed="yes">
@@ -1674,58 +1674,58 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <attribute name="VALUE" x="27.0566" y="17.6954" size="1.27" layer="27"/>
 </element>
 <element name="R18" library="resistor" package="R0603" value="10k" x="26.8732" y="17.4028" smashed="yes">
-<attribute name="NAME" x="22.1742" y="16.717" size="1.27" layer="25"/>
+<attribute name="NAME" x="21.5646" y="15.701" size="1.27" layer="25"/>
 <attribute name="VALUE" x="26.2382" y="15.4978" size="1.27" layer="27"/>
 </element>
 <element name="R2" library="resistor" package="R0603" value="10k" x="35.6076" y="33.5764" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.2906" y="34.9734" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="40.0018" y="34.9734" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="36.2426" y="35.4814" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R3" library="resistor" package="R0603" value="10k" x="31.9404" y="36.934" smashed="yes">
-<attribute name="NAME" x="33.5406" y="37.6706" size="1.27" layer="25"/>
+<attribute name="NAME" x="34.2518" y="38.077" size="1.27" layer="25"/>
 <attribute name="VALUE" x="31.3054" y="35.029" size="1.27" layer="27"/>
 </element>
 <element name="R4" library="resistor" package="R0603" value="40k" x="31.9268" y="34.642" smashed="yes">
-<attribute name="NAME" x="33.527" y="35.1754" size="1.27" layer="25"/>
+<attribute name="NAME" x="34.3398" y="35.4802" size="1.27" layer="25"/>
 <attribute name="VALUE" x="31.2918" y="32.737" size="1.27" layer="27"/>
 </element>
 <element name="R5" library="resistor" package="R0603" value="40k" x="25.1244" y="28.3972" smashed="yes" rot="R270">
-<attribute name="NAME" x="24.5402" y="31.9786" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="24.6418" y="32.5882" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="23.2194" y="29.0322" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R6" library="resistor" package="R0603" value="10k" x="20.4508" y="28.3972" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.8346" y="30.0482" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="17.4282" y="30.1498" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="18.5458" y="29.0322" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R7" library="resistor" package="R0603" value="10k" x="22.686" y="28.3972" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.1018" y="31.9786" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="22.1018" y="32.893" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="20.781" y="29.0322" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R8" library="resistor" package="R0603" value="8k" x="27.94" y="32.846" smashed="yes">
-<attribute name="NAME" x="24.257" y="32.973" size="1.27" layer="25"/>
+<attribute name="NAME" x="23.3426" y="33.6842" size="1.27" layer="25"/>
 <attribute name="VALUE" x="27.305" y="30.941" size="1.27" layer="27"/>
 </element>
 <element name="R9" library="resistor" package="R0603" value="10k" x="27.8892" y="35.226" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.289" y="36.3182" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="25.4762" y="37.3342" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="28.5242" y="37.131" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="DAC80004" package="TSSOP14" value="DAC80004IPW" x="10.4984" y="26.1056" rot="R90"/>
 <element name="U$2" library="OPAX22X" package="SOIC-14" value="OPA4227UA" x="30.9136" y="26.3624" rot="R270"/>
 <element name="U$3" library="REF02" package="SO8" value="REF02AU" x="20.0356" y="41.99" rot="R270"/>
 <element name="R19" library="resistor" package="R0603" value="10k" x="22.7168" y="8.428" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.1326" y="13.0254" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="22.1326" y="13.635" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="20.8118" y="9.063" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R20" library="resistor" package="R0603" value="10k" x="20.4808" y="8.4584" smashed="yes" rot="R270">
-<attribute name="NAME" x="19.9982" y="13.0558" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="19.9982" y="13.5638" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="18.5758" y="9.0934" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R21" library="resistor" package="R0603" value="10k" x="33.5552" y="6.6128" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.0378" y="2.117" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="34.0378" y="1.101" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="35.4602" y="5.9778" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R22" library="resistor" package="R0603" value="10k" x="35.9176" y="6.6752" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.5018" y="2.0778" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="36.9082" y="1.1634" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="37.8226" y="6.0402" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="JP2" library="pinhead" package="1X06" value="AOUT" x="45.6632" y="23.476" rot="R90"/>

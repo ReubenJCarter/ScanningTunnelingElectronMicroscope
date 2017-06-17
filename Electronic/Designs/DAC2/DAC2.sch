@@ -201,7 +201,7 @@
 <wire x1="-2" y1="-1.865" x2="2" y2="-1.865" width="0.127" layer="21"/>
 <circle x="-1.29" y="2.54" radius="0.228034375" width="0.127" layer="21"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="25">&gt;VALUE</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

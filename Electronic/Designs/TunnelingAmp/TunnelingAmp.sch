@@ -6162,9 +6162,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="100M"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device="" value="pwr"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="" value="out"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>

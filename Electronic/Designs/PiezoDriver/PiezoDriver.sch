@@ -6266,7 +6266,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R18" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="R19" library="resistor" deviceset="R-EU_" device="R0603" value="40k"/>
-<part name="R20" library="resistor" deviceset="R-EU_" device="R0603" value="40k"/>
+<part name="R20" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R22" library="resistor" deviceset="R-EU_" device="R0603" value="40k"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
@@ -6634,14 +6634,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="33.02" y="-25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-12.7" y1="30.48" x2="-7.62" y2="30.48" width="0.1524" layer="91"/>
-<label x="-7.62" y="30.48" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="2"/>
-</segment>
-<segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="22.86" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
 <label x="116.84" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-12.7" y1="33.02" x2="-7.62" y2="33.02" width="0.1524" layer="91"/>
+<label x="-7.62" y="33.02" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6691,9 +6691,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="66.04" y="-45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-12.7" y1="33.02" x2="-7.62" y2="33.02" width="0.1524" layer="91"/>
-<label x="-7.62" y="33.02" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="-12.7" y1="30.48" x2="-7.62" y2="30.48" width="0.1524" layer="91"/>
+<label x="-7.62" y="30.48" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">

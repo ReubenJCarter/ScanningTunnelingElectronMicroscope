@@ -1,4 +1,12 @@
-add_executable(stmApp stmApp.cpp)
+
+set (stmAppSrc 
+		StmApp.cpp
+		MainWindow.cpp
+		ControlPanel.cpp
+		ScopeViewer.cpp
+)
+
+add_executable(stmApp ${stmAppSrc})
 
 target_link_libraries(stmApp debug Qt5Cored optimized Qt5Core)
 target_link_libraries(stmApp debug Qt5Guid optimized Qt5Gui)

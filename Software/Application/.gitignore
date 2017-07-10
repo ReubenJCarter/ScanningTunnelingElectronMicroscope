@@ -1,7 +1,6 @@
 #build folder
 build/
 release/
-docs/html/
 ext/
 
 # Compiled Object files

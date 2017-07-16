@@ -11,12 +11,14 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QScrollArea>
 
 
 class ControlPanel: public QDockWidget
 {
 	Q_OBJECT
 	public:
+		QScrollArea* scrollArea;
 		QWidget* root;
 		QVBoxLayout* layout;
 	
@@ -27,7 +29,7 @@ class ControlPanel: public QDockWidget
 		QLabel* connectionStatusLabel;
 		
 		QGroupBox* scanGroupBox;
-		QVBoxLayout* scanLayout;
+		QGridLayout * scanLayout;
 		
 		QDoubleSpinBox* scanlineSpeedSpinner; 
 		QSpinBox* scanStepSpinner;
@@ -39,7 +41,7 @@ class ControlPanel: public QDockWidget
 		QPushButton* cancelScanButton;
 		
 		QGroupBox* freeMoveGroupBox;
-		QVBoxLayout* freeMoveLayout;
+		QGridLayout* freeMoveLayout;
 		
 		QLabel* positionLabel; 
 		QSpinBox* freePosXSpinner;

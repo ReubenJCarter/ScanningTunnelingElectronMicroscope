@@ -18,6 +18,7 @@ class ControlPanel: public QDockWidget
 {
 	Q_OBJECT
 	public:
+		QWidget* infoSection;
 		QScrollArea* scrollArea;
 		QWidget* root;
 		QVBoxLayout* layout;
@@ -43,9 +44,9 @@ class ControlPanel: public QDockWidget
 		QGroupBox* freeMoveGroupBox;
 		QGridLayout* freeMoveLayout;
 		
-		QLabel* positionLabel; 
 		QSpinBox* freePosXSpinner;
 		QSpinBox* freePosYSpinner;
+		QSpinBox* freePosZSpinner;
 		QPushButton* setPositionButton;
 		
 		QGroupBox* scopeParamGroupBox;
@@ -54,6 +55,7 @@ class ControlPanel: public QDockWidget
 		QDoubleSpinBox* biasVoltageSpinner; 
 		QRadioButton* constantCurrentLock;
 		QDoubleSpinBox* tunnelingSetPointSpinner;
+		QPushButton* setScopeParamButton;
 		
 		ControlPanel();
 };

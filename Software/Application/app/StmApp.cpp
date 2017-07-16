@@ -25,7 +25,7 @@ void SetDarkStyle()
 
 int main(int argc, char* argv[])
 {
-	SetDarkStyle();
+	//SetDarkStyle();
 		
 	QApplication app(argc, argv);
 

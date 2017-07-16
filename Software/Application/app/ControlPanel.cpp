@@ -83,10 +83,7 @@ ControlPanel::ControlPanel(): QDockWidget("Control Panel")
 	freeMoveLayout->setColumnStretch(1, 1);
 	freeMoveGroupBox->setLayout(freeMoveLayout);
 	
-	positionLabel = new QLabel("Pos X,Y : 0,0", 0, 0);  
-	freeMoveLayout->addWidget(positionLabel);
-	
-	freeMoveLayout->addWidget(new QLabel("Set Position"), 1, 0);
+	freeMoveLayout->addWidget(new QLabel("Position"), 1, 0);
 	freePosXSpinner = new QSpinBox;
 	freePosXSpinner->setRange(0, 65535);
     freePosXSpinner->setSingleStep(1);
@@ -96,7 +93,12 @@ ControlPanel::ControlPanel(): QDockWidget("Control Panel")
     freePosYSpinner->setSingleStep(1);
 	freeMoveLayout->addWidget(freePosYSpinner, 2, 1);
 	setPositionButton = new QPushButton("Set Position");
-	freeMoveLayout->addWidget(setPositionButton);
+	freeMoveLayout->addWidget(setPositionButton, 3, 0, 1, 2);
+	freeMoveLayout->addWidget(new QLabel("Height"), 4, 0, 1, 2);
+	freePosZSpinner = new QSpinBox;
+	freePosZSpinner->setRange(0, 65535);
+    freePosZSpinner->setSingleStep(1);
+	freeMoveLayout->addWidget(freePosZSpinner, 5, 0);
 	
 	//Scope Param section
 	scopeParamGroupBox = new QGroupBox("Scope Params");
@@ -123,6 +125,9 @@ ControlPanel::ControlPanel(): QDockWidget("Control Panel")
 	tunnelingSetPointSpinner->setMinimum(-100);
 	tunnelingSetPointSpinner->setSingleStep(0.001);
 	scopeParamLayout->addWidget(tunnelingSetPointSpinner);
+	
+	setScopeParamButton = new QPushButton("Set Params");
+	scopeParamLayout->addWidget(setScopeParamButton);
 	
 	scrollArea->setWidget(root);
 }

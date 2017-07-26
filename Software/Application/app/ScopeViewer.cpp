@@ -32,6 +32,7 @@ ScopeViewer::ScopeViewer()
 	scopeGraphicsScene = new QGraphicsScene();
 	layout->addWidget(scopeGraphicsView);
 	scopeGraphicsView->setScene(scopeGraphicsScene);
+	scopeGraphicsView->resize(65536, 65536);
 	//pixelmap
 	pixmap = new QPixmap(scanWidth, scanHeight);
 	pixmapItem = new QGraphicsPixmapItem(*pixmap);

@@ -74,6 +74,7 @@
 <vertex x="16.15" y="16.1"/>
 <vertex x="16.15" y="25"/>
 </polygon>
+<text x="2.9" y="19.2" size="1.778" layer="21">TCA</text>
 </plain>
 <libraries>
 <library name="resistor">

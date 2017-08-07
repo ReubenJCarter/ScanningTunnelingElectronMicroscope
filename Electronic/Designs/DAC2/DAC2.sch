@@ -4064,7 +4064,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="JP1" library="pinhead" deviceset="PINHD-1X9" device="" value="Input"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X6" device="" value="Output"/>
 </parts>
 <sheets>
 <sheet>

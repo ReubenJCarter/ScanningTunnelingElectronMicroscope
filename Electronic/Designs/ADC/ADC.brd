@@ -1522,7 +1522,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="resistor" package="C0603" value="100nf" x="25.52" y="15.92" smashed="yes" rot="R90">
+<element name="C1" library="resistor" package="C0603" value="2.2uf" x="25.52" y="15.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.185" y="14.035" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="26.125" y="9.035" size="1.27" layer="27" rot="R90"/>
 </element>

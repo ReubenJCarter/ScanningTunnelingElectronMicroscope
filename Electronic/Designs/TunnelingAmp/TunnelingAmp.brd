@@ -1527,7 +1527,10 @@ design rules under a new name.</description>
 <element name="C3" library="resistor" package="C0603" value="100nf" x="16.27" y="13.22" rot="R90"/>
 <element name="C4" library="resistor" package="C0603" value="100nf" x="20.5" y="6.17" rot="R180"/>
 <element name="JP1" library="pinhead" package="1X04" value="pwr" x="7.38" y="9.41" rot="R90"/>
-<element name="JP2" library="pinhead" package="1X02" value="out" x="27.43" y="18.26" rot="R90"/>
+<element name="JP2" library="pinhead" package="1X02" value="out" x="27.43" y="18.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.8512" y="20.0438" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="30.605" y="15.72" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="R1" library="resistor" package="R0805" value="100M" x="21.99" y="17.01"/>
 <element name="U1" library="OPA627_FromFarnell" package="SOIC127P600X175-8N" value="OPA627AUE4" x="20.72" y="11.56" rot="R270">
 <attribute name="MPN" value="OPA627AUE4" x="20.72" y="11.56" size="1.778" layer="27" rot="R270" display="off"/>

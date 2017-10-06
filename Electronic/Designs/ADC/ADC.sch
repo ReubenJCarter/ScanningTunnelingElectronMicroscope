@@ -4049,7 +4049,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U$1" library="LT1468" deviceset="LT1468" device=""/>
 <part name="U$2" library="LTC2326-16" deviceset="LTC2326-16" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C0603" value="100nf"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C0603" value="2.2uf"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0603" value="100nf"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0603" value="100nf"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="47uf"/>

@@ -9,6 +9,16 @@
 
 void DACInit(void)
 {
+	//set all the pin modes
+	ioport_set_pin_dir(SCLK_DACPIN, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(SDIN_DACPIN, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(NSYNC_DACPIN, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(SDO_DACPIN, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(NCLR_DACPIN, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(NLDAC_DACPIN, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(POR_DACPIN, IOPORT_DIR_OUTPUT);
+	
+	
 	//make POR_DACPIN set to 1 at start up to set to mid scale
 	
 	//set to nSync line to high as no command is currently being sent

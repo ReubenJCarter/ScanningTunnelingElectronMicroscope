@@ -10,6 +10,7 @@
 #define DAC80004DRIVER_H_
 
 #include <stdint.h>
+#include <asf.h>
 
 #define SCLK_DACPIN		PIO_PD26_IDX//Serial interface shift clock
 #define SDIN_DACPIN		PIO_PC31_IDX//Serial interface digital input

@@ -20,15 +20,18 @@ void DACInit(void)
 	
 	
 	//make POR_DACPIN set to 1 at start up to set to mid scale
+	ioport_set_pin_level(POR_DACPIN, 1);
 	
 	//set to nSync line to high as no command is currently being sent
+	ioport_set_pin_level(NSYNC_DACPIN, 1);
 	
 	//make clr high for a bit and then low for a bit and then high again to reset chip
+	ioport_set_pin_level(NCLR_DACPIN, 1);
+	ioport_set_pin_level(NCLR_DACPIN, 0);
+	ioport_set_pin_level(NCLR_DACPIN, 1);
 	
 	//pull nLDAC to low to put the chip into synchronous mode. This means that as soon as a command has been sent the shift register copied to the actual DAC buffer(I think)
-	
-	
-	
+	ioport_set_pin_level(NLDAC_DACPIN, 0);
 }
 
 void DACWriteCommand(uint32_t command)

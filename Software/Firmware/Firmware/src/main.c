@@ -68,12 +68,13 @@ int main(void)
 	/* Initialize the SAM system */
 	sysclk_init();
 	board_init();
+	delay_init(sysclk_get_cpu_hz()); 
 	/* Initialize the console uart */
 	configure_console();
 	/* Output example information */
 	puts("HELLLLLOOOOOOOO");
 	/* Configure systick for 1 ms */
-	if (SysTick_Config(sysclk_get_cpu_hz() / 1000)) 
+	if (SysTick_Config(sysclk_get_cpu_hz() / 1000))  //takes the number of ticks between two interupts
 	{
 		puts("-F- Systick configuration error\r");
 		while (1);

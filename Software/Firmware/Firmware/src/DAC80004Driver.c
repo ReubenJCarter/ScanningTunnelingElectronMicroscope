@@ -75,11 +75,13 @@ void DACWriteCommand(uint32_t command)
 		delay_us(10);
 	}
 	//set SCLK to high 
-	
-	//wait for  a bit
+	ioport_set_pin_level(SCLK_DACPIN, 1);
 	
 	//set sync to high 
+	ioport_set_pin_level(NSYNC_DACPIN, 1);
 	
+	//wait for  a bit
+	delay_us(10);
 }
 
 void DACWriteChannel(int c, uint16_t d)

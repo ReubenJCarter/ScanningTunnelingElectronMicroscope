@@ -598,6 +598,12 @@
     <None Include="src\ASF\common\services\delay\sam\cycle_counter.h">
       <SubType>compile</SubType>
     </None>
+    <Compile Include="src\LTC2326Driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\LTC2326Driver.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\PIDController.c">
       <SubType>compile</SubType>
     </Compile>

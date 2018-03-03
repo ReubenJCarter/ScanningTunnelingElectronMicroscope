@@ -3,6 +3,8 @@
 #include "stdio_serial.h"
 #include "conf_board.h"
 #include "conf_clock.h"
+#include "DAC80004Driver.h"
+#include "LTC2326Driver.h"
 
 /** IRQ priority for PIO (The lower the value, the greater the priority) */
 #define IRQ_PRIOR_PIO    0
@@ -85,8 +87,12 @@ int main(void)
 		/* Toggle LED state if active */
 		ioport_toggle_pin_level(LED0_GPIO);
 		printf("1 ");
-		/* Wait for 500ms */
-		mdelay(500);
+		/* Wait for 1000ms */
+		mdelay(1000);
+		
+		uint32_t value = 32768;
+		uint32_t channel = 0; 
+		DACWriteChannel(channel, value);
 	}
 }
 

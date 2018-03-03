@@ -22,7 +22,7 @@
 
 void DACInit(void);
 void DACWriteCommand(uint32_t command);
-void DACWriteChannel(int c, uint16_t d);
+void DACWriteChannel(uint32_t c, uint32_t d);
 
 
 #endif /* DAC80004DRIVER_H_ */

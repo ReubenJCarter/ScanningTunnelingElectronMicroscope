@@ -84,7 +84,13 @@ void DACWriteCommand(uint32_t command)
 	delay_us(10);
 }
 
-void DACWriteChannel(int c, uint16_t d)
+void DACWriteChannel(uint32_t c, uint32_t d)
 {
+	uint32_t command = 0;
+	uint32_t channel = c << 20;
+	uint32_t type = 0b0000 << 24;
+	uint32_t data = (d & 0xFFFF) << 4;
+	command = type | channel | data;
 	
+	DACWriteCommand(command); 
 }

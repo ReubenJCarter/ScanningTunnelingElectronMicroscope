@@ -50,7 +50,10 @@ uint16_t ReadADC(void)
 	delay_us(10);
 	
 	//reset convert signal
-	ioport_set_pin_level(CNV_ADCPIN, 1);
+	ioport_set_pin_level(CNV_ADCPIN, 0);
+	
+	//clk low
+	ioport_set_pin_level(SCK_ADCPIN, 0);
 	
 	//read each bit
 	uint16_t finalData = 0; 
@@ -71,7 +74,7 @@ uint16_t ReadADC(void)
 		delay_us(10);
 		
 		//clk low
-		ioport_set_pin_level(SCK_ADCPIN, 1);
+		ioport_set_pin_level(SCK_ADCPIN, 0);
 	}
 	
 	return finalData;

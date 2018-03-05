@@ -34,7 +34,7 @@ void InitADC(void)
 	
 }
 
-uint16_t ReadADC(void)
+uint32_t ReadADC(void)
 {
 	
 	//set cnv (convert) signal to high to start a conversion
@@ -56,11 +56,11 @@ uint16_t ReadADC(void)
 	ioport_set_pin_level(SCK_ADCPIN, 0);
 	
 	//read each bit
-	uint16_t finalData = 0; 
+	uint32_t finalData = 0; 
 	for(int i = 0; i < 16; i++)
 	{
 		//read data 
-		int dataBit = ioport_get_pin_level(SDO_ADCPIN);
+		uint32_t dataBit = ioport_get_pin_level(SDO_ADCPIN);
 		
 		finalData = (finalData << 1) | (dataBit & 0x1);
 		

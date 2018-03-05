@@ -9,7 +9,7 @@
 
 #include "asf.h"
 
-#define DATABIT(data,bit) (data >> bit) & 0x00000001
+#define DATABIT(DATA,BIT) ((DATA) >> (BIT)) & 0x1
 
 void DACInit(void)
 {
@@ -51,28 +51,32 @@ void DACWriteCommand(uint32_t command)
 	ioport_set_pin_level(SCLK_DACPIN, 1);
 	
 	//wait for a bit
-	delay_us(10);
+	delay_us(3);
 	
 	//set sync to low to start writing to the shift register on clock fall.
 	ioport_set_pin_level(NSYNC_DACPIN, 0);
+	
+	
+	//wait for a bit
+	delay_us(1);
 	
 	//for every bit (32)
 	for(int i = 0; i < 32; i++)
 	{
 		//set SDIN 
-		ioport_set_pin_level(SDIN_DACPIN, DATABIT(command, i)); 
+		ioport_set_pin_level(SDIN_DACPIN, DATABIT(command, 31 - i)); 
 		
 		//set SCLK to high
 		ioport_set_pin_level(SCLK_DACPIN, 1);
 	
 		//wait a bit
-		delay_us(10);
+		delay_us(1);
 		
 		//set SCLK to low 
 		ioport_set_pin_level(SCLK_DACPIN, 0);
 		
 		//wait for a bit
-		delay_us(10);
+		delay_us(1);
 	}
 	//set SCLK to high 
 	ioport_set_pin_level(SCLK_DACPIN, 1);
@@ -81,7 +85,7 @@ void DACWriteCommand(uint32_t command)
 	ioport_set_pin_level(NSYNC_DACPIN, 1);
 	
 	//wait for  a bit
-	delay_us(10);
+	//delay_us();
 }
 
 void DACWriteChannel(uint32_t c, uint32_t d)

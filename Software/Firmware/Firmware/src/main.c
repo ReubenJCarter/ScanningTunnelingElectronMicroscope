@@ -81,18 +81,25 @@ int main(void)
 		puts("-F- Systick configuration error\r");
 		while (1);
 	}
-
+	DACInit();
+	uint32_t value = 0; 
 	while (1) 
 	{
 		/* Toggle LED state if active */
 		ioport_toggle_pin_level(LED0_GPIO);
 		printf("1 ");
 		/* Wait for 1000ms */
-		mdelay(1000);
+		mdelay(1);
 		
-		uint32_t value = 32768;
-		uint32_t channel = 0; 
-		DACWriteChannel(channel, value);
+		value++;
+		uint32_t channelZ = 0; 
+		uint32_t channelY = 1; 
+		uint32_t channelB = 2; 
+		uint32_t channelX = 3; 
+		DACWriteChannel(channelZ, 32768);
+		DACWriteChannel(channelX, value);
+		DACWriteChannel(channelY, value);
+		DACWriteChannel(channelB, 32768);
 	}
 }
 

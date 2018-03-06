@@ -21,8 +21,8 @@
 #define RDLSDI_ADCPIN	PIO_PB2_IDX//input whn chain is low the is a bus enable input, else its a data input
 
 
-void InitADC(void);
-uint32_t ReadADC(void);
+void ADCInit(void);
+uint32_t ADCRead(void);
 
 
 #endif /* LTC2326DRIVER_H_ */

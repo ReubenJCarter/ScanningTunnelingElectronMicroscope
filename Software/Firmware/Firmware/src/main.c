@@ -82,14 +82,15 @@ int main(void)
 		while (1);
 	}
 	DACInit();
+	ADCInit(); 
 	uint32_t value = 0; 
 	while (1) 
 	{
 		/* Toggle LED state if active */
 		ioport_toggle_pin_level(LED0_GPIO);
 		printf("1 ");
-		/* Wait for 1000ms */
-		mdelay(1);
+		/* Wait for 500ms */
+		mdelay(500);
 		
 		value++;
 		uint32_t channelZ = 0; 
@@ -100,6 +101,10 @@ int main(void)
 		DACWriteChannel(channelX, value);
 		DACWriteChannel(channelY, value);
 		DACWriteChannel(channelB, 32768);
+		
+		uint32_t adcRead = ADCRead();
+		
+		printf("ADC VALUE: %d\n", adcRead);
 	}
 }
 

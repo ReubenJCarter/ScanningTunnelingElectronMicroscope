@@ -3,7 +3,118 @@
 
 ControlPanel::ControlPanel(): QDockWidget("Control Panel")
 {
-	scrollArea = new QScrollArea();
+	scrollAreaBase = new QScrollArea();
+	widgetBase = new QWidget();
+	layoutBase = new QVBoxLayout();
+	
+	widgetBase->setLayout(layoutBase);
+	scrollAreaBase->setWidget(widgetBase);
+	scrollAreaBase->setWidgetResizable(true);
+	setWidget(scrollAreaBase);
+		
+	//Z Ctrl
+	labelZCtrl = new QLabel("Z Control");
+	layoutBase->addWidget(labelZCtrl); 
+		
+	checkConstantHeight = new QCheckBox("Constant Height");
+	layoutBase->addWidget(checkConstantHeight); 
+	
+	layoutZSetpoint = new QHBoxLayout();
+	labelZSetpoint = new QLabel("Z Setpoint"); 
+	spinZSetpoint = new QDoubleSpinBox();
+	layoutBase->addLayout(layoutZSetpoint); 
+	layoutZSetpoint->addWidget(labelZSetpoint); 
+	layoutZSetpoint->addWidget(spinZSetpoint); 
+	
+	layoutZValue = new QHBoxLayout();
+	labelZValue = new QLabel("Z Value"); 
+	spinZValue = new QDoubleSpinBox();
+	buttonZMoveTo = new QPushButton("Move Tip");
+	layoutBase->addLayout(layoutZValue); 
+	layoutZValue->addWidget(labelZValue); 
+	layoutZValue->addWidget(spinZValue);
+	layoutZValue->addWidget(buttonZMoveTo);
+	
+	layoutZStopPoint  = new QHBoxLayout();
+	labelZStopPoint = new QLabel("Z Stop Point"); 
+	spinZStopPoint = new QDoubleSpinBox();
+	layoutBase->addLayout(layoutZStopPoint); 
+	layoutZStopPoint->addWidget(labelZStopPoint); 
+	layoutZStopPoint->addWidget(spinZStopPoint); 
+	
+	//XY Scan 
+	labelXYScan = new QLabel("XY Scan"); 
+	layoutBase->addWidget(labelXYScan); 
+	
+	layoutScanMin = new QHBoxLayout();
+	labelScanMin = new QLabel("Min x/y"); 
+	spinScanXMin = new QDoubleSpinBox();
+	spinScanYMin = new QDoubleSpinBox();
+	layoutBase->addLayout(layoutScanMin); 
+	layoutScanMin->addWidget(labelScanMin); 
+	layoutScanMin->addWidget(spinScanXMin); 
+	layoutScanMin->addWidget(spinScanYMin); 
+	
+	layoutScanMax = new QHBoxLayout();
+	labelScanMax = new QLabel("Max x/y"); 
+	spinScanXMax = new QDoubleSpinBox(); 
+	spinScanYMax = new QDoubleSpinBox();
+	layoutBase->addLayout(layoutScanMax); 
+	layoutScanMax->addWidget(labelScanMax); 
+	layoutScanMax->addWidget(spinScanXMax); 
+	layoutScanMax->addWidget(spinScanYMax); 
+
+	checkScanStartStop = new QCheckBox();
+	layoutBase->addWidget(checkScanStartStop); 
+	
+	//XY Cursor
+	labelXYCursor = new QLabel("Cursor"); 
+	layoutBase->addWidget(labelXYCursor); 
+	
+	layoutCursorPosition = new QHBoxLayout();
+	labelCursorPosition = new QLabel("position x/y"); 
+	spinCursorXMax = new QDoubleSpinBox();
+	spinCursorYMax = new QDoubleSpinBox();
+	layoutBase->addLayout(layoutCursorPosition); 
+	layoutCursorPosition->addWidget(labelCursorPosition); 
+	layoutCursorPosition->addWidget(spinCursorXMax); 
+	layoutCursorPosition->addWidget(spinCursorYMax); 
+	
+	buttonCursorMoveTo = new QPushButton("Move Tip");
+	layoutBase->addWidget(buttonCursorMoveTo); 
+	
+	//B Ctrl
+	labelBCtrl = new QLabel("B Control"); 
+	
+	layoutBValue = new QHBoxLayout();
+	labelBValue = new QLabel(); 
+	spinBValue = new QDoubleSpinBox();
+	
+	//Measure
+	labelMeasure = new QLabel(); 
+	
+	labelTunRead = new QLabel(); 
+	labelZRead = new QLabel(); 
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
 	root = new QWidget;
 	layout = new QVBoxLayout;
 	root->setLayout(layout);
@@ -130,4 +241,5 @@ ControlPanel::ControlPanel(): QDockWidget("Control Panel")
 	scopeParamLayout->addWidget(setScopeParamButton);
 	
 	scrollArea->setWidget(root);
+	*/
 }

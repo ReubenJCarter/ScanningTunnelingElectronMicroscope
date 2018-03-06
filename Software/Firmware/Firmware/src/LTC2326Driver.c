@@ -9,8 +9,9 @@
 
 #include "asf.h"
 
+#define TIMEOUT_CYCLES 10000000
 
-void InitADC(void)
+void ADCInit(void)
 {
 	//set all the pin modes
 	ioport_set_pin_dir(CNV_ADCPIN, IOPORT_DIR_OUTPUT);
@@ -34,7 +35,7 @@ void InitADC(void)
 	
 }
 
-uint32_t ReadADC(void)
+uint32_t ADCRead(void)
 {
 	
 	//set cnv (convert) signal to high to start a conversion
@@ -44,7 +45,12 @@ uint32_t ReadADC(void)
 	delay_us(10);
 	
 	//wait for Busy to be low 
-	while(ioport_get_pin_level(BUSY_ADCPIN)); 
+	
+	int timeoutcycles = 0; 
+	while(ioport_get_pin_level(BUSY_ADCPIN) && timeoutcycles < TIMEOUT_CYCLES) timeoutcycles++; 
+	
+	if(timeoutcycles >= TIMEOUT_CYCLES)
+		return 0;
 	
 	//wait some time
 	delay_us(10);

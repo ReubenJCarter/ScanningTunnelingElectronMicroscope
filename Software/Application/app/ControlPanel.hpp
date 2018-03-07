@@ -26,20 +26,24 @@ class ControlPanel: public QDockWidget
 		//Z Ctrl
 		QLabel* labelZCtrl;
 		
+		QHBoxLayout* layoutConstantHeight;
+		QLabel* labelConstantHeight;
 		QCheckBox* checkConstantHeight;
 		
-		QHBoxLayout* layoutZSetpoint;
-		QLabel* labelZSetpoint; 
-		QDoubleSpinBox* spinZSetpoint;
+		QHBoxLayout* layoutTunSetpoint;
+		QLabel* labelTunSetpoint; 
+		QDoubleSpinBox* spinTunSetpoint;
+		
+		QPushButton* buttonTunCtrlStartStop;
 		
 		QHBoxLayout* layoutZValue;
 		QLabel* labelZValue; 
 		QDoubleSpinBox* spinZValue;
 		QPushButton* buttonZMoveTo;
 		
-		QHBoxLayout* layoutZStopPoint;
-		QLabel* labelZStopPoint; 
-		QDoubleSpinBox* spinZStopPoint;
+		QHBoxLayout* layoutTunStopPoint;
+		QLabel* labelTunStopPoint; 
+		QDoubleSpinBox* spinTunStopPoint;
 		
 		//XY Scan 
 		QLabel* labelXYScan;
@@ -54,7 +58,7 @@ class ControlPanel: public QDockWidget
 		QDoubleSpinBox* spinScanXMax; 
 		QDoubleSpinBox* spinScanYMax;
 
-		QCheckBox* checkScanStartStop;
+		QPushButton* buttonScanStartStop;
 		
 		//XY Cursor
 		QLabel* labelXYCursor;
@@ -73,52 +77,8 @@ class ControlPanel: public QDockWidget
 		QLabel* labelBValue; 
 		QDoubleSpinBox* spinBValue;
 		
-		//Measure
-		QLabel* labelMeasure;
+		QPushButton* buttonSetBias;
 		
-		QLabel* labelTunRead;
-		QLabel* labelZRead;
-		
-		
-		/*
-		QWidget* infoSection;
-		QScrollArea* scrollArea;
-		QWidget* root;
-		QVBoxLayout* layout;
 	
-		QGroupBox* connectionGroupBox;
-		QVBoxLayout* connectionLayout;
-		
-		QPushButton* connectDisconnectButton;
-		QLabel* connectionStatusLabel;
-		
-		QGroupBox* scanGroupBox;
-		QGridLayout * scanLayout;
-		
-		QDoubleSpinBox* scanlineSpeedSpinner; 
-		QSpinBox* scanStepSpinner;
-		QSpinBox* scanPosXSpinner;
-		QSpinBox* scanPosYSpinner;
-		QSpinBox* scanSizeXSpinner;
-		QSpinBox* scanSizeYSpinner;
-		QPushButton* startScanButton;
-		QPushButton* cancelScanButton;
-		
-		QGroupBox* freeMoveGroupBox;
-		QGridLayout* freeMoveLayout;
-		
-		QSpinBox* freePosXSpinner;
-		QSpinBox* freePosYSpinner;
-		QSpinBox* freePosZSpinner;
-		QPushButton* setPositionButton;
-		
-		QGroupBox* scopeParamGroupBox;
-		QVBoxLayout* scopeParamLayout;
-		
-		QDoubleSpinBox* biasVoltageSpinner; 
-		QRadioButton* constantCurrentLock;
-		QDoubleSpinBox* tunnelingSetPointSpinner;
-		QPushButton* setScopeParamButton;
-		*/
 		ControlPanel();
 };

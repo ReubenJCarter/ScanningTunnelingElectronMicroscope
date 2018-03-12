@@ -1,14 +1,7 @@
 #pragma once
 
 
-#include <QtWidgets/QWidget>
-#include <QtWidgets/QDockWidget>
-#include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QGraphicsScene>
-#include <QtWidgets/QGraphicsView>
-#include <QtWidgets/QGraphicsItem>
+#include "Common.hpp"
 
 
 class ScopeViewer: public QWidget

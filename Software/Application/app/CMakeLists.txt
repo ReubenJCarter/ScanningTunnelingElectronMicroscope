@@ -4,6 +4,8 @@ set (stmAppSrc
 		MainWindow.cpp
 		ControlPanel.cpp
 		ScopeViewer.cpp
+		ConsolePanel.cpp
+		DevicePanel.cpp
 )
 
 add_executable(stmApp ${stmAppSrc})

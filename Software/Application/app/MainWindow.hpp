@@ -1,13 +1,11 @@
 #pragma once
 
+#include "Common.hpp"
 
 #include "ScopeViewer.hpp"
 #include "ControlPanel.hpp"
-
-#include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QMenuBar>
+#include "ConsolePanel.hpp"
+#include "DevicePanel.hpp"
 
 
 class MainWindow: public QMainWindow
@@ -16,6 +14,8 @@ class MainWindow: public QMainWindow
 	public:
 		ScopeViewer scopeViewer;
 		ControlPanel controlPanel;
+		ConsolePanel console;
+		DevicePanel devicePanel; 
 	
 		QMenu* fileMenu;
 		QAction* saveAction;

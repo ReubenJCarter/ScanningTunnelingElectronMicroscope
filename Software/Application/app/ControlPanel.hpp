@@ -1,18 +1,7 @@
 #pragma once
 
 
-#include <QtWidgets/QWidget>
-#include <QtWidgets/QDockWidget>
-#include <QtWidgets/QGroupBox>
-#include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QRadioButton>
-#include <QtWidgets/QDoubleSpinBox>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QCheckBox>
-#include <QtWidgets/QSpinBox>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
-#include <QtWidgets/QScrollArea>
+#include "Common.hpp"
 
 
 class ControlPanel: public QDockWidget

@@ -1,9 +1,5 @@
 #include "MainWindow.hpp"
 
-#include <iostream>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QDesktopWidget>
-
 
 MainWindow::MainWindow()
 {
@@ -22,6 +18,9 @@ MainWindow::MainWindow()
 	//dockables
 	addDockWidget(Qt::LeftDockWidgetArea, &controlPanel);
 	
+	addDockWidget(Qt::RightDockWidgetArea, &devicePanel); 
+	
+	addDockWidget(Qt::RightDockWidgetArea, &console);
 	
 	showNormal();
 	ExpandToFitScreen();
